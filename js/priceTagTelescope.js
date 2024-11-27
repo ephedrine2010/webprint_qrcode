@@ -11,7 +11,7 @@ $(document).ready(function() {
       const queryString = window.location.search;
       const urlParams = new URLSearchParams(queryString);
 
-      const text= urlParams.get('text');
+      let text= urlParams.get('text');
       //text="9708*1*5";
       var receivedData=text.split("*");
       //console.log(receivedData);
@@ -101,19 +101,19 @@ $(document).ready(function() {
                     <tbody>
                         <tr>
                             <td rowspan="4" class="text-center">
-                                <img src="${item.standqr}" alt="qrocde" style="height:70px ; width:70px" />
+                                <img src="${item.standqr}" alt="qrocde" style="height:40px ; width:40px" />
                             </td>
                         </tr>
                         <tr>
                             <td class="text-center">
-                                <h1 class="h5 mb-0 text-gray-800" style="min-width:130px;">
+                                <h1 class="h6 mb-0 text-gray-800" style="min-width:100px;">
                                   ${item.stand_category}
                                 </h1>
                             </td>
                         </tr>
                         <tr>
                             <td class="text-center">
-                                <h1 class="h5 mb-0 text-gray-800">
+                                <h1 class="h6 mb-0 text-gray-800">
                                   ${item.standCode}
                                 </h1>
                             </td>
